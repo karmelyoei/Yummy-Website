@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.menuBar__list {
+  overflow: hidden;
+}
+
+.menuBar__list ul {
+  padding: 30px 0px 5px 105px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.menuBar__list a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 4vw;
+  font-family: "Lobster Two", cursive;
+}
+
+.menuBar__list a:hover {
+  border-width: 0 0 1px;
+  border-style: solid;
+  transform: scale(1.05);
+  font-size: 5vw;
+  text-shadow: 2px 2px 4px rgb(102, 99, 99);
+}
+
+.menuBar__logoImage {
+  position: absolute;
+  width: 100px;
+}
+
+.menuBar__logoImage img {
+  width: 104px;
+  height: 97px;
+  padding-left: 1px;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 380px;
+}
+
+.background__img {
+  width: 100%;
+  height: 100%;
+  background: url("../public/images/background2.jpg") no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  padding-left: 38px;
+}
+.categories {
+  padding-top: 10px;
+  /* background-color: rgba(241, 238, 238, 0.952); */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+.categories__contents {
+  display: flex;
+  flex-direction: row;
+  padding-top: 8px;
+  position: sticky;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease-out;
+  margin: 12px;
+}
+
+.categories__contents img {
+  width: 263px;
+  height: 267px;
+  border-image: 1;
+  border-radius: 20%;
+  margin: 17px;
+}
+.categories a {
+  background-color: white;
+  width: fit-content;
+  height: 25px;
+  font-size: 25px;
+  position: absolute;
+  z-index: 100;
+  padding: 12px;
+  margin-left: 22px;
+  text-decoration: none;
+  color: black;
+}
+
+.blog {
+  padding-top: 5px;
+}
+
+.blog__line {
+  width: 718px;
+  height: 20px;
+  border-bottom: 2px solid black;
+  position: absolute;
+}
